@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML Skills | My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #38bdf8;
+      margin-bottom: 1rem;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .skill-card {
+      background-color: #1e293b;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #facc15;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .skill-percent {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    .progress-bar {
+      background-color: #334155;
+      border-radius: 1rem;
+      overflow: hidden;
+      height: 12px;
+      margin-bottom: 0.5rem;
+    }
+
+    .progress {
+      height: 100%;
+      background: linear-gradient(90deg, #22d3ee, #3b82f6);
+      width: 0;
+      animation: fillProgress 2s ease forwards;
+    }
+
+    @keyframes fillProgress {
+      to {
+        width: var(--level);
+      }
+    }
+
+    .skill-description {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>HTML Skills</h1>
+  <div class="skills-container">
+    <div class="skill-card">
+      <div class="skill-title">
+        HTML5 Semantics <span class="skill-percent">90%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 90%;"></div>
+      </div>
+      <div class="skill-description">
+        Well-versed in semantic tags like <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;header&gt;</code> to improve accessibility and SEO.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        Forms & Validation <span class="skill-percent">85%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 85%;"></div>
+      </div>
+      <div class="skill-description">
+        Proficient in building forms using <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code>, <code>&lt;textarea&gt;</code> with built-in validation and custom error messages.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        Responsive Layout (HTML Structure) <span class="skill-percent">80%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 80%;"></div>
+      </div>
+      <div class="skill-description">
+        Ability to structure content efficiently using containers, columns, and mobile-friendly markup.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        Accessibility (ARIA, Alt Text) <span class="skill-percent">75%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 75%;"></div>
+      </div>
+      <div class="skill-description">
+        Familiar with best practices for accessibility including ARIA roles, alt attributes, and keyboard navigation support.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        Media Embedding <span class="skill-percent">70%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 70%;"></div>
+      </div>
+      <div class="skill-description">
+        Experience embedding videos, images, and audio files using <code>&lt;video&gt;</code>, <code>&lt;img&gt;</code>, and <code>&lt;audio&gt;</code> tags.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        Tables & Lists <span class="skill-percent">85%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 85%;"></div>
+      </div>
+      <div class="skill-description">
+        Strong command over organizing data using <code>&lt;table&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, and <code>&lt;dl&gt;</code> elements with proper structure.
+      </div>
+    </div>
+  </div>
+</body>
+</html>

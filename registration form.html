@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            body {
+                background-image:url('reg.jpg');
+                background-size: cover;
+                background-color: deepskyblue;
+                background-repeat: no-repeat;
+                background-position: fixed;
+                font-family: 'Times New Roman', Times, serif;
+                color: rgb(rgb(255, 91, 189),);
+            }
+            h1 {
+                text-align: center;
+                font-size: 2.5em;
+                margin-top: 20px;
+                color: rgb(109, 255, 12);
+            }
+            form {
+                width: 70%;
+                margin: 0 auto;
+                padding: 20px;
+                background-color: white;
+                backdrop-filter: blur(5px);
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+                max-height: 800vh;
+                overflow-y: auto;
+            }
+            fieldset {
+              width: 50%;
+              margin: 20px auto;
+              padding: 20px;
+              border: 2px solid rgb(109, 255, 12,);
+              border-radius: 10px;
+            }
+        
+            legend {
+              font-size: 1.2em;
+              font-weight: bold;
+              color: rgb(109, 255, 12);
+            }
+        
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              margin-top: 10px;
+            }
+        
+            th, td {
+              padding: 10px;
+              border: 1px solid #ddd;
+              text-align: center;
+            }
+        
+            th {
+              background-color: #f2f2f2;
+            }
+          </style>
+    </head>
+    <body>
+        <h1 style="color: rgb(109, 255, 12);">Registration Form</h1>
+        <form>
+          <fieldset>
+      <legend>personal Details</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <br>
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" required>
+      <br>
+      <label for="gender">Gender</label><br>
+      <input type="radio" id="male" name="gender">
+      <label for="male">Male</label>
+      <br>
+      <input type="radio" id="female" name="gender">
+      <label for="female">Female</label>
+      <br>
+      <label for="dob">Date of birth</label>
+      <input type="date" id="dob" name="dob" required>
+      <br>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+      <br>
+      <label for="dept">College Department </label>
+      <select id="dept" name="dept">
+        <option value="select">Select</option>
+        <option value="cse">Cse</option>
+        <option value="ece">Ece</option>
+        <option value="aids">Aids</option>
+        <option value="mech">Mech</option>
+      </select>
+    </fieldset>
+    <fieldset>
+      <legend>Academic Details</legend>
+                <table>
+                  <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Year of Passing</th>
+                    <th>Percentage</th>
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="qualification1" placeholder="e.g., 10th"></td>
+                    <td><input type="text" name="institution1" placeholder="School/College Name"></td>
+                    <td><input type="number" name="year1" placeholder="Year"></td>
+                    <td><input type="text" name="percentage1" placeholder=" %"></td>
+                  </tr>
+                  <tr>
+                    <td><input type="text" name="qualification2" placeholder="e.g., 12th"></td>
+                    <td><input type="text" name="institution2" placeholder="School/College Name"></td>
+                    <td><input type="number" name="year2" placeholder="Year"></td>
+                    <td><input type="text" name="percentage2" placeholder=" %"></td>
+                  </tr>
+                </table>      
+    </fieldset>
+    <fieldset>
+      <legend>Extracurriculam Activites</legend>
+      <label for="sports">Intrested sports</label><br>
+      <input type="checkbox" id="cricket" name="cricket">
+      <label for="cricket">Cricket</label> 
+      <br>
+      <input type="checkbox" id="football" name="football">
+      <label for="football">Football</label> 
+      <br>
+      <input type="checkbox" id="badminton" name="badminton">
+      <label for="badminton">Badminton</label> 
+      <br>
+      <input type="checkbox" id="vollyball" name="volleyball">
+      <label for="vollyball">Vollyball</label> 
+      <br>
+      <label for="read">Reading</label>
+      <br>
+      <input type="radio" id="yes" name="yes">
+      <label for="yes">Yes</label>
+      <br>
+      <input type="radio" id="no" name="no">
+      <label for="no">No</label>
+      <br>
+      <label for="books">Types of books</label>
+      <br>
+      <input type="checkbox" id="java" name="java">
+      <label for="java">Java</label> 
+      <br>
+      <input type="checkbox" id="data" name="data">
+      <label for="data">Data structure</label> 
+      <br>
+      <input type="checkbox" id="python" name="python">
+      <label for="python">Python</label> 
+      <br>
+    </fieldset>
+    <fieldset>
+      <legend>Value Added skills</legend>
+      <label for="sub">Subject of Intrest</label>
+      <select id="sub" name="sub">
+        <option value="select">Select</option>
+        <option value="math">Maths</option>
+        <option value="phy">Physics</option>
+        <option value="che">Chemistry</option>
+        <option value="eng">English</option>
+      </select>
+      <br>
+      <label for="skills">Technical Skills</label>
+      <br>
+      <input type="checkbox" id="java" name="java">
+      <label for="java">Java</label> 
+      <br>
+      <input type="checkbox" id="python" name="python">
+      <label for="python">Python</label> 
+      <br>
+      <input type="checkbox" id="html" name="html">
+      <label for="html">Html</label> 
+      <br>
+    </fieldset>
+    <fieldset>
+      <legend>Remarks</legend>
+      <input type="textarea" >
+    </fieldset>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+            
+          
+        </form>
+    </body>
+</html>

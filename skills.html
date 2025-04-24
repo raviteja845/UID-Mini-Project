@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Skills</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #0688fa;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 36px;
+      color: antiquewhite;
+      text-shadow: 2px 5px 7px #000000;
+      margin-bottom: 30px;
+    }
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .skill {
+      width: 220px;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .skill:hover {
+      transform: scale(1.1);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.35);
+    }
+
+    .skill img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .skill:hover img {
+      transform: scale(1.2);
+    }
+
+    .skill a {
+      display: block;
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .skill:hover a {
+      color: #00ffcc;
+    }
+
+    .skill p {
+      font-size: 14px;
+      color: #e6f7ff;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    <div class="skill">
+      <img src="python_img.webp" alt="Python">
+      <a href="pythonskill.html">Python</a>
+      <p>Python is powerful for scripting and data science.</p>
+    </div>
+    <div class="skill">
+      <img src="java_img.png" alt="Java">
+      <a href="javaskill.html">Java</a>
+      <p>Java is object-oriented and used for enterprise apps.</p>
+    </div>
+    <div class="skill">
+      <img src="html_img.png" alt="HTML">
+      <a href="htmlskill.html">HTML</a>
+      <p>HTML builds the basic structure of all web pages.</p>
+    </div>
+    <div class="skill">
+      <img src="css_img.webp" alt="CSS">
+      <a href="cssSkill.html">CSS</a>
+      <p>CSS styles HTML with colors, layouts, and fonts.</p>
+    </div>
+    <div class="skill">
+      <img src="java script_img.webp" alt="JavaScript">
+      <a href="javascriptskill.html">JavaScript</a>
+      <p>JavaScript adds interactivity and dynamic features.</p>
+    </div>
+    <div class="skill">
+      <img src="C Programming_img.png" alt="C Language">
+      <a href="cskill.html">C Language</a>
+      <p>C is the foundation of modern programming languages.</p>
+    </div>
+  </div>
+</body>
+</html>

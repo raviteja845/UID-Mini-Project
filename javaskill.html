@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Skills | My Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f172a;
+      color: #f8fafc;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      color: #38bdf8;
+      margin-bottom: 1rem;
+    }
+
+    .skills-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .skill-card {
+      background-color: #1e293b;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .skill-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .skill-title {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      color: #facc15;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .skill-percent {
+      color: #94a3b8;
+      font-size: 0.95rem;
+    }
+
+    .progress-bar {
+      background-color: #334155;
+      border-radius: 1rem;
+      overflow: hidden;
+      height: 12px;
+      margin-bottom: 0.5rem;
+    }
+
+    .progress {
+      height: 100%;
+      background: linear-gradient(90deg, #22d3ee, #3b82f6);
+      width: 0;
+      animation: fillProgress 2s ease forwards;
+    }
+
+    @keyframes fillProgress {
+      to {
+        width: var(--level);
+      }
+    }
+
+    .skill-description {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 500px) {
+      body {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Java Skills</h1>
+  <div class="skills-container">
+    <div class="skill-card">
+      <div class="skill-title">
+        Core Java <span class="skill-percent">90%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 90%;"></div>
+      </div>
+      <div class="skill-description">
+        Strong knowledge of Java syntax, OOP principles, exception handling, and file I/O operations.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        Collections Framework <span class="skill-percent">85%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 85%;"></div>
+      </div>
+      <div class="skill-description">
+        Experience using List, Set, Map, and Queue interfaces with various implementations like ArrayList, HashMap, etc.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        Multithreading & Concurrency <span class="skill-percent">70%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 70%;"></div>
+      </div>
+      <div class="skill-description">
+        Knowledge of thread lifecycle, synchronization, concurrency utilities, and parallel task execution.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        Java GUI (Swing/JavaFX) <span class="skill-percent">65%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 65%;"></div>
+      </div>
+      <div class="skill-description">
+        Ability to create user interfaces using Java Swing and JavaFX, including layout managers and event handling.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        JDBC & Database Access <span class="skill-percent">75%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 75%;"></div>
+      </div>
+      <div class="skill-description">
+        Experience connecting Java applications to relational databases using JDBC for CRUD operations.
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-title">
+        Java Web Development (Servlets, JSP) <span class="skill-percent">70%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress" style="--level: 70%;"></div>
+      </div>
+      <div class="skill-description">
+        Understanding of servlet lifecycle, session management, and building basic Java-based web apps.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
